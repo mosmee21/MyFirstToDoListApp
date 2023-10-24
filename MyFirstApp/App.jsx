@@ -16,10 +16,11 @@ import {
   Button
 } from 'react-native';
 import ToDoForm from './src/ToDoForm';
+import ToDoList from './src/ToDoList';
 
 
 function App() {
-  const {tasks, setTasks} = useState([
+  const [tasks, setTasks] = useState([
     'Do laundry',
     'Go to gym',
     'Walk dog',
@@ -30,7 +31,6 @@ function App() {
     <SafeAreaView>
      <ToDoList  tasks = {tasks}/>
      <ToDoForm/>
-      
     </SafeAreaView>
   );
 }
