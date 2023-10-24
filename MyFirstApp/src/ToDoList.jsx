@@ -12,13 +12,13 @@ function ToDoList({ tasks = [] }) {
     <>
       <ScrollView>
         {tasks.map((task, index) => (
-          <>
-            <Pressable key={index} >
+          <React.Fragment key={index}>
+            <Pressable>
               <View style={[styles.task, styles.completed]}>
                 <Text style={styles.taskText}>{task}</Text>
               </View>
             </Pressable>
-          </>
+          </React.Fragment>
 
         ))}
         {/*<Pressable>
