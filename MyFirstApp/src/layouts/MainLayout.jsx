@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Header from './Header';
-import Footer from './Footer';
+import Footer from '../Components/Footer';
 
 const MainLayout = ({ children }) => {
   return (
