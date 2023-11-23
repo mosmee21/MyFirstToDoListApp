@@ -31,6 +31,7 @@ form: {
     alignItems: 'center',
     marginHorizontal: 20,
     marginTop: 20,
+  
   },
   input: {
     flex: 1,
