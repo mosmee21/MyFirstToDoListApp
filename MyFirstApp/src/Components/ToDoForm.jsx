@@ -9,6 +9,11 @@ import {
 function ToDoForm({onAddTask}) {
   const [taskText, setTaskText] = React.useState('');
 
+  const handleAddTask = () => {
+    onAddTask(taskText);
+    setTaskText(''); // Reset the input field after adding the task
+  };
+
     return (
         <>
         <View style={styles.form}>
@@ -18,7 +23,7 @@ function ToDoForm({onAddTask}) {
           onChangeText={(text) => setTaskText(text)}
           value = {taskText}
         />
-        <Button title="Add" onPress={() => onAddTask(taskText)}  />
+        <Button title="Add" onPress={handleAddTask} />
       </View>
         </>
     );
