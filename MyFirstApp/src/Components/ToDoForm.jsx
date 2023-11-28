@@ -6,7 +6,7 @@ import {
     Button
 } from 'react-native';
 
-function ToDoForm({onAddTask}) {
+function ToDoForm({onAddTask ,style}) {
   const [taskText, setTaskText] = React.useState('');
 
   const handleAddTask = () => {
@@ -16,7 +16,7 @@ function ToDoForm({onAddTask}) {
 
     return (
         <>
-        <View style={styles.form}>
+        <View style={[styles.form ,style]}>
         <TextInput
           style={styles.input}
           placeholder="Add a new task..."

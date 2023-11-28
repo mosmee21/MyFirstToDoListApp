@@ -21,7 +21,7 @@ function Home({navigation}) {
             <MainLayout>
                 <SafeAreaView>
                     <ToDoList  tasks = {tasks}/>
-                    <ToDoForm onAddTask={handleAddTask}/>
+                    <ToDoForm onAddTask={handleAddTask}  style={{ marginVertical: 20 }}/>
 
                     <Button
                         title="Go to About"
