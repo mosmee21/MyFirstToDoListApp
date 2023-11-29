@@ -4,6 +4,7 @@ import MainLayout from '../layouts/MainLayout';
 
 import ToDoList from '../Components/ToDoList';
 import ToDoForm from '../Components/ToDoForm';
+import ChuckNorrisFact from '../ChuckNorrisFact';
 
 function Home({navigation}) {
     const [tasks, setTasks] = React.useState([
@@ -27,6 +28,7 @@ function Home({navigation}) {
                         title="Go to About"
                         onPress={() => navigation.navigate('About')}
                     />
+                    <ChuckNorrisFact />
                 </SafeAreaView>
             </MainLayout>
         </>
