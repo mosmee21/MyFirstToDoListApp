@@ -8,10 +8,16 @@ import ChuckNorrisFact from '../ChuckNorrisFact';
 
 function Home({navigation}) {
     const [tasks, setTasks] = React.useState([
-        'Do laundry',
-        'Go to gym',
-        'Walk dog',
-        'Study'
+        "Finish homework",
+        "Buy groceries",
+        "Walk the dog",
+        "Read a book",
+        "Do laundry",
+        "Exercise",
+        "Practice coding",
+        "Write a blog post",
+        "Call a friend",
+        "Water the plants",
       ]);
     
       const handleAddTask = (task) => {
